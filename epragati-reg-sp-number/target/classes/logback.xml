@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   (c) Copyright 2016 Open Text. All Rights Reserved. Trademarks owned by OTSI -->
+
+<configuration>
+	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">	
+		<File>/var/log/ePragati-sn.log</File>
+		<encoder>
+			<charset>utf-8</charset>
+			<Pattern>%d %p %c:%t - %m%n</Pattern>
+    	</encoder>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<maxIndex>10</maxIndex>
+			<FileNamePattern>/var/log/ePragati-sn.log.%i</FileNamePattern>
+		</rollingPolicy>
+	    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<MaxFileSize>10240KB</MaxFileSize>
+	    </triggeringPolicy>
+	</appender>
+
+	<appender name="boot-stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%level: %msg%n</Pattern>
+	    </encoder>
+	</appender>
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%msg%n</Pattern>
+	    </encoder>
+	</appender>
+
+	<logger name="console" level="info">
+		<appender-ref ref="console"/>
+	</logger>
+	<root level="info">
+		<appender-ref ref="file"/>
+	</root>
+</configuration>

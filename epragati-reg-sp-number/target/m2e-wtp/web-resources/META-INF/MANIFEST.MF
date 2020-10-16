@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: Admin
+Build-Jdk: 14.0.1
+Implementation-Title: Epragati Registration Special Number
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: org.epragati
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/epragati-rta-r
+ eg/epragati-reg-sp-number/
+Created-By: Maven Integration for Eclipse
+

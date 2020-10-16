@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="sn">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
+        <dependent-module archiveName="epragati-reg-payment-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-payment/epragati-reg-payment">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-dao-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-dao/epragati-reg-dao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-vo-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-vo/epragati-reg-vo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-util-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-util/epragati-reg-util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-services-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-services/epragati-reg-services">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-activemq-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-activemq/epragati-reg-activemq">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-excel-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-excel/epragati-reg-excel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="epragati-reg-sp-common-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/epragati-reg-sp-common/epragati-reg-sp-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="sn"/>
+        <property name="java-output-path" value="/epragati-reg-sp-number/target/classes"/>
+    </wb-module>
+</project-modules>
